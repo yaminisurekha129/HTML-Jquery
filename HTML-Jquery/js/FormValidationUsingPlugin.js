@@ -1,6 +1,6 @@
 $(document).ready(function(){
  
-    $("#form").validate({
+    $("form[name='registration']").validate({
 
         rules:{
 
@@ -19,7 +19,7 @@ $(document).ready(function(){
             },
             phone: {
                 required : true,
-                indianPhone : true,
+                // indianPhone : true,
                 minlength : 10,
                 maxlength : 10,
                 digits : true
@@ -57,7 +57,8 @@ $(document).ready(function(){
 
                 required : "First Name is required"
                 
-            },
+            }
+            ,
             lastName : {
                 required : "Last Name is required"
             },

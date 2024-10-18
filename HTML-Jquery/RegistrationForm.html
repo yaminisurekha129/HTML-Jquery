@@ -12,14 +12,15 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js"></script>
 
 
 	
 
 <style>
-
-	.error{
+    .error{
 
 		color:rgb(242,18,18);
 		font-size:16px;
@@ -39,7 +40,9 @@
      .input-group.success input{
 
 		border-color:rgb(76, 175, 80);
-	 }
+	 } 
+
+	 
 
 	
 
@@ -49,108 +52,106 @@
 
 </head>
 
+
 <body>
 
 
-<form id="form">
+<form action="" name="registration">
 
 <div class="container bg-light pt-5 pb-5 mt-5">
 	<h2 class="text-center">Registration Form</h2>
 
 
-	<!-- <table>
-		<tr>
-			<td>
-			<input type="text" placeholder="First name" id="firstName">
-		</td>
-		<td class="error" id="first_name"></td>
-	</tr>
-	</table> -->
-
-<label for="FirstName" class="form-label">First Name</label>
+<label for="firstName" class="form-label">First Name</label>
 <div>
 
 	<div class="input-group">
 		<span class="input-group-text"><i class="bi bi-person-fill"></i></span>
-		<input type="text" placeholder="First name" id="firstName" class="form-control">
-		<div class="error" ></div>
+		<input type="text" name="firstName" placeholder="First name" id="firstName" class="form-control">
+		<div class="error"  ></div>
 	</div>
 	
 
 </div>
 
-<label for="LastName" class="form-label mt-2">Last Name</label>
+<label for="lastName" class="form-label mt-2">Last Name</label>
 <div class="input-group">
 	<span class="input-group-text"><i class="bi bi-person-fill"></i></span>
-	<input type="text" placeholder="Last Name" id="lastName" class="form-control">
-	<div class="error"></div>
+	<input type="text" name="lastName" placeholder="Last Name" id="lastName" class="form-control">
+	
 </div>
+<div class="error"></div>
 
 
 
-<label for="Email" class="form-label mt-2">E-Mail</label>
+<label for="email" class="form-label mt-2">E-Mail</label>
 <div class="input-group">
 	<span class="input-group-text"><i class="bi bi-envelope"></i></span>
-	<input type="text" placeholder="E-Mail Address" id="email" class="form-control">
-	<div class="error"></div>
+	<input type="text" name="email" placeholder="E-Mail Address" id="email" class="form-control">
 </div>
+<div class="error"></div>
+
 
 <label for="phone" class="form-label mt-2">Phone #</label>
 <div class="input-group">
 	<span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
-	<input type="tel" placeholder="(845)555-1212" id="phone" class="form-control">
-
-	<div class="error"></div>
+	<input type="text" name="phone" placeholder="(845)555-1212" id="phone" class="form-control">
 </div>
+
+<div class="error"></div>
 
 <label for="address" class="form-label mt-2">Address</label>
 <div class="input-group">
 	<span class="input-group-text"><i class="bi bi-house-door-fill"></i></span>
-	<input type="text" placeholder="Address" id="address" class="form-control">
-	<div class="error"></div>
+	<input type="text" name="address" placeholder="Address" id="address" class="form-control">
+	
 </div>
+<div class="error"></div>
 
 
-<label for="Email" class="form-label mt-2">City</label>
+<label for="city" class="form-label mt-2">City</label>
 <div class="input-group">
 	<span class="input-group-text"><i class="bi bi-house-door-fill"></i></span>
-	<input type="text" placeholder="City" id="city" class="form-control">
-	<div class="error"></div>
+	<input type="text" name="city" placeholder="City" id="city" class="form-control">
+	
 </div>
+<div class="error"></div>
 
 
-<label for="create password" class="form-label mt-2">Create Password</label>
+<label for="createPassword" class="form-label mt-2">Create Password</label>
 <div class="input-group">
 <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
-<input type="password" placeholder="create password" id="createPassword" class="form-control">
-<div class="error"></div>
+<input type="password" name="createPassword" placeholder="create password" id="createPassword" class="form-control">
+
 </div>
+<div class="error"></div>
 
 
 
-<label for="Repeat password" class="form-label mt-2">Repeat Password</label>
+<label for="repeatPassword" class="form-label mt-2">Repeat Password</label>
 <div class="input-group">
 <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
-<input type="password" placeholder="Repeat password" id="repeatPassword" class="form-control">
-<div class="error"></div>
+<input type="password" name="repeatPassword" placeholder="Repeat password" id="repeatPassword" class="form-control">
+
 </div>
+<div class="error"></div>
 
 
 
-<label for="Email"  class="form-label mt-2">State</label>
+<label for="state"  class="form-label mt-2">State</label>
 <div class="input-group">
 	<span class="input-group-text"><i class="bi bi-menu-button-wide"></i></span>
-	<select id="state" class="form-select input-group">
+	<select id="state" name="state" class="form-select input-group">
 	    <option>Please Select your state</option>
 		<option>Andhra Pradesh</option>
 		<option>Tamil Nadu</option>
 		<option>Kerala</option>
 
 	</select>
-	<div class="error"></div>
 	
 </div>
-<div>
+<div class="error"></div>
+
 
 
 <div class="mt-5  col-2 mx-auto ">
@@ -162,6 +163,6 @@
 
 </form>
 
-<script src="js/formValidation.js"></script> 
+<script src="js/FormValidationUsingPlugin.js"></script>  
 </body>
 </html>
